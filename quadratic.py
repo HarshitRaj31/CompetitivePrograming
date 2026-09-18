@@ -1,30 +1,28 @@
-SIZE = 10
 
-hash_table = [-1] * SIZE
-
+SIZE=10
+hash_Table=[-1]*SIZE
 
 def insert(key):
-    original_index = key % SIZE
 
-    for i in range(SIZE):
-
-        index = (original_index + i * i) % SIZE
-
-        if hash_table[index] == -1:
-            hash_table[index] = key
-            print(key, "inserted at index", index)
-            return
-
-    print("Hash table is full!")
-
+  index=key%SIZE
+  start=index
+  for i in range(SIZE):
+      index=(start+i*i)%SIZE
+    
+      while hash_Table[index]==-1:
+            hash_Table[index]=key
+            print(key,"inserted at  index",index)
 
 def display():
+    print("\nHash TABLE")
     for i in range(SIZE):
-        print("Index", i, ":", hash_table[i])
+         print("Index",i,":",hash_Table[i])
 
 
 insert(25)
 insert(35)
 insert(15)
-
-display()
+insert(26)
+  
+# Display
+display()   
