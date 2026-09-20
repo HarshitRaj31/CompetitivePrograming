@@ -19,6 +19,7 @@ int binary(int arr[],int start,int end,int tar)
        
        
     }
+    return -1;
 }
 int main()
 {
