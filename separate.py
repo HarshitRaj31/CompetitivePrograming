@@ -1,25 +1,22 @@
-SIZE = 10
 
-# Create hash table
-hash_table = [[] for _ in range(SIZE)]
-
+SIZE=10
+hash_Table=[[] for _ in range(SIZE)]
 
 def insert(key):
-    index = key % SIZE
 
-    hash_table[index].append(key)
-
+  index=key%SIZE
+  hash_Table[index].append(key)
 
 def display():
-    print("Hash Table:")
-
+    print("\nHash TABLE")
     for i in range(SIZE):
-        print(i, ":", hash_table[i])
+         print("Index",i,":",hash_Table[i])
 
 
 insert(25)
 insert(35)
 insert(15)
 insert(26)
-
-display()
+  
+# Display
+display()   

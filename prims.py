@@ -7,7 +7,7 @@ graph = [
     [0, 1, 4, 0]
 ]
 
-visited = [False] * V
+visited = [0] * V
 
 visited[0] = True
 

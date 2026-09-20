@@ -6,16 +6,11 @@ hash_table = [-1] * SIZE
 
 def insert(key):
     index = key % SIZE
-    original_index = index
 
     # Linear probing
     while hash_table[index] != -1:
         index = (index + 1) % SIZE
 
-        # Table is full
-        if index == original_index:
-            print("Hash table is full!")
-            return
 
     hash_table[index] = key
     print(key, "inserted at index", index)
