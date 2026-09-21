@@ -1,6 +1,6 @@
 
 SIZE=10
-hash_Table=[-1]*SIZE
+hash_Table=[None]*SIZE
 
 def insert(key):
 
@@ -8,7 +8,7 @@ def insert(key):
   for i in range(SIZE):
       index=(index+i*i)%SIZE
     
-      while hash_Table[index]==-1:
+      while hash_Table[index]==None:
             hash_Table[index]=key
             print(key,"inserted at  index",index)
 
