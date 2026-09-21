@@ -6,7 +6,7 @@ def insert(key):
 
   index=key%SIZE
   for i in range(SIZE):
-      index=(start+i*i)%SIZE
+      index=(index+i*i)%SIZE
     
       while hash_Table[index]==-1:
             hash_Table[index]=key
